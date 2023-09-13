@@ -1,6 +1,8 @@
 Author: Jim Terrill
 Date: 13/09/2023
 Comments: First time using Ruby so was a fun exercise to get to grips with the language.
+
+Written using Ruby, Selenium Webdriver and Cucumber.
     
 1. Run 'bundle install' to install all required gems
 2. Run 'cucumber' to run all scenarios
