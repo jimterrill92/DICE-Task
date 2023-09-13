@@ -7,13 +7,14 @@ class DicePage
 def emailField = @browser.find_element(:name, 'email')
 def passwordField = @browser.find_element( :name, 'password')
 def signInButton = @browser.find_element(:xpath, "//span[contains(text(),'Sign in')]")
-        #  Create event locators
+
+#  Create event locators
 def createEventButton = @browser.find_element(:xpath, "//a[@href='/events/new']")
 def eventNameField = @browser.find_element(:xpath, "//input[@placeholder='Name of the event or headline artist']")
 def genreField = @browser.find_element(:id, "genres")
 def venueField = @browser.find_element(:id,"primaryVenue")
     
-#  Event Date Locators
+# Event Date Locators
 def timelineButton = @browser.find_element(:xpath,"//li[@data-id='stepIndicator[timeline]']")
 def announceDateField = @browser.find_element(:name, "announceDate")
 def eventOnSaleField = @browser.find_element(:name,"onSaleDate")

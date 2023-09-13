@@ -93,9 +93,12 @@ Given("A new fan is on the created event page") do
     count = 0
     while @driver.find_elements(:xpath, "//strong[contains(text(), '" + $eventName + "')]").empty? && count < 5
         sleep 10
+        # Sometimes the search bar is closing during the retry, if this happens reopen the search bar
         if (@driver.find_elements(:xpath, "//input[@placeholder='Find an event']").empty?) 
             @actions.clickElement(@dice_page.searchIcon)
         end
+
+        # Clear search bar and re-enter event name
         @dice_page.searchField.clear
         @actions.typeText(@dice_page.searchField, $eventName)
         count += 1
