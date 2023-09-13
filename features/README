@@ -1,0 +1,10 @@
+Author: Jim Terrill
+Date: 13/09/2023
+Comments: First time using Ruby so was a fun exercise to get to grips with the language.
+    
+1. Run 'bundle install' to install all required gems
+2. Run 'cucumber' to run all scenarios
+
+Future improvements:
+- Reporting is only found in the terminal for now, however would integrate more advanced reporting and test management tool (TestRail API for example) as a next step
+- Would look to create some teardown steps via API or SQL to delete the created event and remove the randomly generated email and mobile number from the test evironment. This would make sure a duplicate value has no change of being entered into the UI
